@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook Misión 17 : Pitch de Proyecto Final</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Playbook-S2-TM17</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 17 : Pitch de Proyecto Final</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 17 - 2do Secundaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
-                <span id="timer">⏱️ 00:00</span>
-                <button id="startStop">Start</button>
-                <button id="reset">Reset</button>
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
             </div>
             <div class="theme-toggle">
                 <i class="fas fa-sun"></i>
@@ -28,7 +27,6 @@
             </div>
         </div>
     </header>
-
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
@@ -40,236 +38,404 @@
                 <li><a href="#activity-4">4</a></li>
                 <li><a href="#activity-5">5</a></li>
             </ul>
-
-            <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-            </div>
         </aside>
-
         <main class="content">
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
-
-            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
             <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo: Misión Gnius</h2>
-                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
-                <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos:</strong>
-                                    <ul>
-                                        <li>Idear un concepto de proyecto final (AR o VR).</li>
-                                        <li>Tomar decisiones estratégicas de alto nivel sobre el uso de herramientas de IA en su workflow.</li>
-                                        <li>Justificar sus elecciones como 'Directores de Orquesta' y presentarlas en un 'pitch' conciso.</li>
-                                    </ul>
-                                    <strong>Secuencia de Clase:</strong>
-                                    <ul>
-                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Formalización del rol de 'Director de Orquesta'.</li>
-                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Presentación del Desafío:</strong> Introducción al diseño estratégico y el 'pitching'.</li>
-                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Adquisición de los ejes estratégicos para el uso de la IA en su proyecto.</li>
-                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Brainstorming, diálogo estratégico con Xolo y preparación del 'pitch deck'.</li>
-                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Sesión de 'pitching' donde cada equipo presenta su proyecto a un panel de 'productores'.</li>
-                                    </ul>
-                                    <strong>Entregable Clave:</strong>
-                                    <ul>
-                                        <li>Un 'pitch deck' (2-3 diapositivas o documento simple) que resume el concepto, objetivo y estrategia de IA del proyecto.</li>
-                                        <li>Una presentación verbal de 60 segundos ('pitch') del proyecto a la clase.</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos:</strong>
-                                    <ul>
-                                        <li>Proyector o pantalla interactiva.</li>
-                                        <li>Conexión a internet estable.</li>
-                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
-                                        <li>Acceso a herramientas de presentación simples (Google Slides, etc.) o editor de texto.</li>
-                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
-                                    </ul>
-                                    <strong>Preparación Previa para ESTA Sesión:</strong>
-                                    <ol>
-                                        <li><strong>Revisión de Misión (Interna):</strong>
-                                            <ul>
-                                                <li>Asegurar que Xolo está preparado para actuar como 'Productor Ejecutivo', analizando las ventajas y riesgos de las estrategias de los alumnos.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Familiarización:</strong> Prepararse para actuar como moderador de una sesión de 'pitching', gestionando el tiempo y fomentando preguntas constructivas del panel de 'productores' (el resto de la clase).</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> usar Delightex para realizar una ideación estructurada y un pitch de proyecto para tomar decisiones sobre herramientas IA y comprender el juicio crítico y el rol humano en el proceso creativo.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Explícame qué significa actuar como “Director de Orquesta” al crear un proyecto con IA: decidir qué herramienta usar, para qué parte del proceso y por qué. Guíame para diferenciar usos típicos de IA generativa (inspiración visual, audio, texto) y de IA copiloto (estructura, revisión, sugerencias). Luego ayúdame a construir un pitch claro: idea central, experiencia del usuario, qué hará el proyecto y cómo la IA apoyará sin reemplazar mi criterio.</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Juicio crítico: Es como ser el juez de un concurso; tú decides qué ideas de la IA son buenas y cuáles no sirven para tu proyecto.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar herramientas digitales para crear un pitch de proyecto y decidir qué IA utilizar.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes combinaciones de herramientas de IA para entender sus alcances y limitaciones.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Dispositivo con acceso a internet (1 por cada 2 estudiantes)</label>
+                        <label><input type="checkbox"> Acceso a Delightex (https://edu.delightex.com/Auth)</label>
+                        <label><input type="checkbox"> Cuaderno de notas para bocetos del pitch</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa herramientas de ideación y pitch en Delightex</label>
+                        <label><input type="checkbox"> 📋 Para esta misión: Ingresar a Delightex con las credenciales proporcionadas y crear un nuevo proyecto.</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> No aplica hardware físico, pero recuerda mantener tu espacio de trabajo limpio y cerrar sesión al terminar.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre el rol de Director de Orquesta en proyectos de IA (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si Delightex no carga:</strong> Verificar la conexión a internet y refrescar la página. Asegurarse de estar usando un navegador compatible.</li><li><strong>Si XOLO no responde en el chat:</strong> Intentar refrescar Gnius Space o usar el enlace de SOS.</li><li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
             <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Saludo de I.A. y Contexto de Misión ⏰ 3 minutos</h2>
-                <p>Establecer un ambiente de trabajo estratégico y formalizar el cambio de rol hacia 'Directores de Orquesta'.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Contexto ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta la misión: definir su visión de autor.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Desarrolladores. Han dominado las herramientas y los conceptos. Ahora, llega el momento de la verdad para todo creador: el proyecto de autor. Ya no seguirán mis tutoriales ni mis guías. Ustedes tomarán todas las decisiones. Hoy, su misión es definir su visión. Se convierten en Directores de Orquesta."</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
                     </div>
-                      <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Activación de IA y Perfil ⏰ 2 minutos</h3>
-                            <p>El facilitador da la instrucción explícita a los alumnos para que saluden a Xolo en el chat.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Activen su sesión de trabajo para la Misión 17. Utilicen el protocolo estándar en el chat con Xolo para comenzar."</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "¡Hoy tomarán el control total como directores de su propia orquesta tecnológica!".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre el rol de Director de Orquesta y el juicio crítico en la IA.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A dirigir herramientas de IA para que sus proyectos tengan un propósito claro y humano.</p>
+                        <p><strong>Aplicación real:</strong> Los directores de cine en grandes estudios usan esta tecnología para coordinar efectos visuales, guiones y música sin perder su visión artística.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 2: A.I. GYM -->
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
-                <p>Clarificar las metas de aprendizaje y presentar la planificación estratégica como una habilidad profesional.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: El Desafío del Día ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 3) El facilitador introduce el concepto de 'pitch' y la importancia de la estrategia detrás del 'qué'.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Iniciamos el último módulo, que culminará con el 'Festival de Experiencias Inmersivas'. Su tarea es diseñar y construir una experiencia en AR o VR desde cero. La sesión de hoy es la más estratégica de todas. Deberán crear un 'pitch' o presentación conceptual de su idea. Esto no es solo 'qué' van a hacer, sino 'cómo' y 'por qué' lo van a hacer de esa manera, especialmente en lo que respecta al uso de la IA."</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Objetivo de Aprendizaje (I Can Statement) ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje concreto de la sesión.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo funciona la toma de decisiones al elegir herramientas de IA.</li>
+                            <li>Introduce el concepto de juicio crítico en el proceso creativo.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a usar herramientas de IA para estructurar un pitch.</li>
+                            <li>Aprender sobre el rol humano en la creación con IA.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Al finalizar esta sesión, podrán afirmar con seguridad: <strong>'Yo puedo idear un concepto de proyecto original y justificar mis decisiones estratégicas sobre qué herramientas de IA utilizaré en cada fase del desarrollo, actuando como un Director de Orquesta.'</strong>"</p>
-                            </div>
-                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar Delightex para idear y aplicar el juicio crítico.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Hola a todos! Ahora vamos a aprender algo fundamental: cómo ser los jefes de la tecnología. Abran su chat con XOLO y salúdenlo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Hoy descubrirán qué significa ser un 'Director de Orquesta' cuando usamos Inteligencia Artificial. No se trata de que la IA haga todo, sino de que ustedes decidan qué instrumento toca cada herramienta. ¡Pregúntenle todo lo que necesiten!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: A.I. GYM ⏰ 10 minutos</h2>
-                <p>Guiar a los estudiantes para que entiendan las preguntas estratégicas clave que deben responder como 'Directores de Orquesta'.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Diálogo Conceptual con Xolo ⏰ 10 minutos</h3>
-                            <p>(Proyectar Diapositiva 5) El facilitador instruye a los estudiantes sobre cómo iniciar su diálogo estratégico con Xolo.</p>
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los dispositivos conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique el juicio crítico creativo.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para usar herramientas de IA en su proyecto.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Configurar su entorno en Delightex y probar su pitch.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Ayudame a idear el concepto de mi proyecto final y su vibe. Guíame para definir: (1) tema y atmósfera, (2) mecánica principal o interacción clave, (3) qué herramientas de IA usaré y para qué (generativa / copiloto), justificando mis elecciones como Director de Orquesta. Luego ayúdame a estructurar mi pitch para presentarlo con claridad."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Entramos al A.I. GYM. Hoy su rol como 'Director de Orquesta' se formaliza. Para ello, deben conocer las preguntas clave que un director debe responder. Consulten a su Productor Ejecutivo. Díganle a Xolo: <strong>'Xolo, como mi Productor Ejecutivo, ¿cuáles son las preguntas clave sobre mi estrategia de IA que debo responder en mi pitch?'</strong> Él no les dirá qué hacer, pero les planteará las decisiones que deben tomar sobre arte, narrativa y lógica."</p>
-                            </div>
-                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿El pitch comunica claramente tu idea central?</li>
+                            <li>¿Qué pasa si cambias la herramienta de IA sugerida por otra diferente?</li>
+                            <li>¿Funciona igual tu mensaje con un tono formal vs uno emocionante?</li>
+                            <li>¿Por qué es necesario tu juicio crítico para filtrar lo que la IA propone?</li>
+                            <li>¿Cómo aseguras que el rol humano siga siendo el más importante en tu proyecto?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es hora de crear, genios! Vamos a pasar de la teoría a la acción. El flujo de hoy es: idear su concepto con XOLO, definir el VIBE de su proyecto, obtener su GCS (Guía de Concepto y Sugerencias), llevarlo a Delightex y experimentar. Por ejemplo, podrían idear un museo virtual donde la IA genera las imágenes pero ustedes deciden el recorrido y el mensaje. Usen las preguntas de experimentación para pulir su pitch. Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar su lógica. ¡Abran sus dispositivos y a brillar!</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya probé con mi pitch básico. ¿Puedes enseñarme cómo hacer que mi proyecto incluya una justificación ética sobre el uso de la IA?"</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
             <div class="activity-card" id="activity-4">
-                 <h2>⚡ Actividad 4: Brain Spark ⏰ 15 minutos</h2>
-                <p>Supervisar el workflow de brainstorming, diálogo estratégico con Xolo, y preparación del pitch deck.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Brainstorming del Proyecto Final ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 6) Los equipos discuten y definen la idea central y el alcance de su proyecto final.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Ahora, al Brain Spark. En equipos, tienen 5 minutos para el brainstorming. Definan la idea central de su proyecto final. ¿Será una escape room, un tour narrativo, una experiencia artística? Piensen en el alcance (scope). Recuerden que es mejor una idea pequeña y muy pulida que una idea enorme e inacabada. Sean realistas."</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Diálogo Estratégico con Xolo ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 7) Los equipos discuten su estrategia de IA con Xolo para analizar ventajas y riesgos.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">"Con una idea central, inicien su diálogo estratégico con Xolo. Presenten su idea y su plan inicial de uso de IA. Por ejemplo: 'Nuestra idea es un museo virtual. Queremos usar Midjourney para retratos, un LLM para biografías y Vibe Coding para la interactividad.' Xolo analizará su estrategia, destacando ventajas, riesgos y decisiones clave que deben tomar para asegurar la cohesión."</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Preparación del Pitch Deck ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 8) Los equipos crean un breve documento o presentación que resume su pitch.</p>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué herramientas de IA eligió y por qué.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué herramientas de IA eligió mejor tu equipo? ¿Qué te sorprendió de tu rol como director?</p>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">"Ahora, sinteticen su proyecto en un 'pitch deck'. Preparen una breve presentación, de 2 a 3 diapositivas, que resuma: 1. El concepto central de su experiencia. 2. El objetivo de la experiencia (qué quieren que sienta o haga el usuario). 3. Su estrategia de uso de IA, justificando cada elección. Este será el guion para su pitch."</p>
-                            </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi proyecto usa IA para la parte visual. Me sorprendió que yo tuve que corregir la estructura del pitch."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
             <div class="activity-card" id="activity-5">
-                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
-                <p>Moderar la sesión de pitching, donde cada equipo presenta su proyecto para ser evaluado por sus compañeros.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Pitching de Proyectos ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 9) El facilitador modera mientras cada equipo presenta su pitch de 60 segundos.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Es la hora de los pitches. Cada equipo tiene 60 segundos para presentar su proyecto. Deben convencernos de que su idea es interesante y su plan es sólido. El resto de la clase actuará como un panel de 'productores' que escucha atentamente para dar feedback. Equipo 1, están listos."</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Síntesis y Cierre ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 10) El facilitador concluye la sesión, oficializando el inicio de la producción del proyecto final.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Han presentado sus visiones. Han actuado no como técnicos, sino como líderes de proyecto. En las próximas sesiones, ejecutarán estos planes. Recuerden, un buen director se adhiere a su visión pero es flexible en la ejecución. La planificación ha terminado. La producción comienza ahora. Excelente trabajo, directores."</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-
     <script src="script.js"></script>
 </body>
-</html>
+</html></html>
